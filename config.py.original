@@ -1,0 +1,5 @@
+DATABASE = 'data/progress.db'
+DEBUG = True
+SECRET_KEY = 'asecretkey'
+USERNAME = 'admin'
+PASSWORD = 'password'

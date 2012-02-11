@@ -1,0 +1,28 @@
+* {
+    font-size: 1.00em;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #232323;
+    color: #fff;
+    font: 1.00em Arial;
+    padding: 2.00em;
+}
+
+.header {
+    background: #000;
+    margin: -2.00em;
+    margin-bottom: 1.00em;
+    padding: 0 2.00em;
+}
+
+.header * { display: inline-block; }
+
+.deadline {
+    background: #111;
+    border-radius: 0.50em;
+    margin: 0.50em 0;
+    padding: 0.50em;
+}
