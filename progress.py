@@ -19,7 +19,13 @@ def init_db():
 
 @app.before_request
 def before_request():
-    g.db = connect_db()
+#try to connect to the database. 
+#if it hasn't been initialized, do that
+    try:
+        g.db = connect_db()
+    except sqlite3.OperationalError:
+        g.db = connect_db()
+        init_db()
 
 @app.teardown_request
 def teardown_request(exception):
